@@ -162,7 +162,7 @@ class UserData:
             'usb_opts': self.usb_opts,
         }
         with open(self.path, 'w') as fdout:
-            json.dump(data, fdout)
+            json.dump(data, fdout, indent=2)
             # json.dump(data, fdout, indent=2)
 
     def subscribe(self, announcefn, config_items=None):
